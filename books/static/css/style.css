@@ -1,0 +1,136 @@
+/*==========================
+ヘッダー
+==========================*/
+header {
+	width: 1000px;
+	height: 100px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.page_title {
+	width: 30%;
+}
+
+.box {
+	float: left;
+}
+/*=============
+検索
+==============*/
+.search {
+	display: inline-block;
+	width: 30%;
+}
+
+
+/*=============
+mypage/ログイン/新規登録
+==============*/
+.account{
+	display: inline-block;
+	width: 20%;
+}
+
+
+/*=============
+カート
+==============*/
+.cart {
+	display: inline-block;
+	width: 20%;
+}
+
+
+/*==========================
+ナビゲーションバー(大分類)
+==========================*/
+nav{
+text-align: center;
+background-color: yellow;
+width: 1000px;
+}
+
+nav ul{
+margin: 0 ;
+padding: 0 ;
+}
+
+nav ul li.top_large_group{
+list-style: none;
+display: inline-block;
+width: 18%;
+min-width: 90px;
+}
+
+nav ul li a{
+text-decoration: none;
+color: #333;
+}
+
+nav ul li.current  a{
+color: #F33135;
+}
+
+nav ul li a:hover {
+color: #E7DA66;
+}
+
+
+/*==========================
+メインコンテンツ
+==========================*/
+
+.wrapper {
+	width: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+.sub_group {
+	width: 20%;
+	background-color: pink;
+	padding-bottom: 32768px;
+	margin-bottom: -32768px;
+}
+
+.right_content {
+	width: 80%;
+	padding-bottom: 32768px;
+	margin-bottom: -32768px;
+}
+
+.pr_content {
+	background-color: black;
+}
+
+.item_list {
+	background-color: lightgreen;
+	padding-bottom: 32768px;
+	margin-bottom: -32768px;
+}
+
+/*=======================
+information
+=======================*/
+
+.information {
+	background-color: blue;
+	width: 1000px;
+	text-align: right;
+}
+
+ul {
+	list-style: none;
+}
+
+
+/*=======================
+フッター
+=======================*/
+footer {
+	width: 1000px;
+	background-color: black;
+	color: white;
+}
