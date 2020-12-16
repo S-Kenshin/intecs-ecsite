@@ -6,10 +6,11 @@ header {
 	height: 100px;
 	display: inline-block;
 	overflow: hidden;
+	background-color: orange;
 }
 
 .page_title {
-	width: 30%;
+	width: 20%;
 }
 
 .box {
@@ -20,7 +21,7 @@ header {
 ==============*/
 .search {
 	display: inline-block;
-	width: 30%;
+	width: 20%;
 }
 
 
@@ -32,6 +33,10 @@ mypage/ログイン/新規登録
 	width: 20%;
 }
 
+.login-out {
+	display: inline-block;
+	width: 20%;
+}
 
 /*=============
 カート
@@ -103,7 +108,7 @@ color: #E7DA66;
 }
 
 .pr_content {
-	background-color: black;
+	background-color: red;
 }
 
 .item_list {
