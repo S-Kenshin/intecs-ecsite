@@ -7,8 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
     <title>Intecs Books</title>
   </head>
@@ -36,9 +36,9 @@
 <!--ナビゲーションバー-->
 <nav>
   <ul>
-    <li class="top_large_group"><a href="#">大分類1</a></li>
-    <li class="top_large_group"><a href="#">大分類2</a></li>
-    <li class="top_large_group"><a href="#">大分類3</a></li>
+    <li class="top_large_group"><a href="#">本</a></li>
+    <li class="top_large_group"><a href="#">CD</a></li>
+    <li class="top_large_group"><a href="#">文房具</a></li>
   </ul>
 </nav><!--./nav-->
 
@@ -75,7 +75,16 @@
       <h2>広告や商品リストを表示します。</h2>
     </article><!--./article-->
   <div class="item_list">
-      <p>商品リスト/商品リスト/商品リスト</p>
+      {% for item in data %}
+    <table>
+        <tr>
+            <td class="top_item_detail"><a href="#"><img src="{{ item.item_img }}" /></a></td>
+        </tr>
+        <tr>
+            <td>{{ item.title }}</td>
+        </tr>
+    </table>
+      {% endfor %}
   </div>
   </main><!--./right_content-->
 </div><!--./wrapper-->
@@ -83,9 +92,9 @@
 <!--詳細情報/お問い合わせ-->
 <div class="information">
   <ul class="information_list">
-    <li class="company_info">会社情報</li>
+    <li class="company_info"><a href="https://intecs.ne.jp/">会社情報</a></li>
     <li class="question_info">お問い合わせ</li>
-    <li class="recruit_info">採用情報</li>
+    <li class="recruit_info"><a href="https://intecs.ne.jp/recruit/">採用情報</li>
   </ul>
 </div><!--./info-->
 <!--フッター-->

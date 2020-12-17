@@ -51,35 +51,35 @@ mypage/ログイン/新規登録
 ナビゲーションバー(大分類)
 ==========================*/
 nav{
-text-align: center;
-background-color: yellow;
-width: 1000px;
-height: 50px;
+    text-align: center;
+    background-color: yellow;
+    width: 1000px;
+    height: 50px;
 }
 
 nav ul{
-margin: 0 ;
-padding: 0 ;
+    margin: 0 ;
+    padding: 0 ;
 }
 
 nav ul li.top_large_group{
-list-style: none;
-display: inline-block;
-width: 18%;
-min-width: 90px;
+    list-style: none;
+    display: inline-block;
+    width: 18%;
+    min-width: 90px;
 }
 
 nav ul li a{
-text-decoration: none;
-color: #333;
+    text-decoration: none;
+    color: #333;
 }
 
 nav ul li.current  a{
-color: #F33135;
+    color: #F33135;
 }
 
 nav ul li a:hover {
-color: #E7DA66;
+    color: #E7DA66;
 }
 
 
@@ -115,6 +115,10 @@ color: #E7DA66;
 	background-color: lightgreen;
 	padding-bottom: 32768px;
 	margin-bottom: -32768px;
+}
+
+.top_item_detail {
+    width: 20px;
 }
 
 /*=======================
